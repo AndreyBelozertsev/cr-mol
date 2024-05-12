@@ -1,0 +1,9 @@
+import './bootstrap';
+import './components/form';
+import './components/lazyload';
+import './components/lightgallery';
+import './components/map';
+import './components/menu';
+import './components/modal';
+import './components/phone-mask';
+import './components/slider';

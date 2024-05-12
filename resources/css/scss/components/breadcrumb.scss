@@ -1,0 +1,18 @@
+.breadcrumbs li{
+    position: relative;
+  }
+  
+  .breadcrumbs li::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    right: -28px;
+    background-image: url('../../../public/images/icons/br-arrow.svg');
+    background-position: center;
+  }
+  
+  .breadcrumbs li:last-child::after{
+    display: none;
+  }
+  
