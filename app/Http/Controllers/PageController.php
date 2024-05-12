@@ -17,7 +17,6 @@ class PageController extends Controller
         $page = Cache::rememberForever('page_' . $slug, function() use($slug) {
             return Page::activeItem($slug)->first();
         });
-        $page = Page::activeItem($slug)->first();
 
         if($page){
 
@@ -32,8 +31,10 @@ class PageController extends Controller
 
     public function home()
     {
-        $categories = Category::activeItems()->where('category_id', NULL)->get();
-        return view('page.home.index', compact('categories'));
+        $categories =Cache::rememberForever('home_page_category', function() {
+             return Category::activeItems()->where('category_id', NULL)->get();
+        });
+        return view('page.home.index', ['categories' => $categories]);
     }
 
     public function contact()

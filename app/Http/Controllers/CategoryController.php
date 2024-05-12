@@ -18,7 +18,7 @@ class CategoryController extends Controller
                 return $query->where('slug', $slug);
             })
             ->activeItems()
-            ->withCount('users')
+            //->withCount('users')
             ->paginate(24);
 
             return view("unit.index", compact(['category', 'units']));
