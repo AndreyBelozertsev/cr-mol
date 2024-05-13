@@ -34,6 +34,7 @@ if( document.getElementsByClassName('vote_form') ){
             if(response.success){
                 hideAllModals();
                 openModal('modal-response');
+                responseBlock.innerHTML = response.success;
                 responseModal.addEventListener("hideModal", function(event) {
                     window.location.reload();
                 });
