@@ -1,33 +1,70 @@
+// @font-face {
+//     font-family: 'GT-Eesti-LC-Display-Light';
+//     font-weight: 300;
+//     font-style: normal;
+//     src: 
+//       url('../fonts/GT-Eesti-LC-Display-Light.ttf') format('ttf'),
+//       url('../fonts/GT-Eesti-LC-Display-Light.woff2') format('woff2'),
+//       url('../fonts/GT-Eesti-LC-Display-Light.woff') format('woff');
+      
+//     font-display: swap;
+//   }
+  
+//   @font-face {
+//     font-family: 'GT-Eesti-LC-Text-Regular';
+//     font-weight: 400;
+//     font-style: normal;
+//     src: 
+//       url('../fonts/GT-Eesti-LC-Text-Regular.ttf') format('ttf'),
+//       url('../fonts/GT-Eesti-LC-Text-Regular.woff2') format('woff2'),
+//       url('../fonts/GT-Eesti-LC-Text-Regular.woff') format('woff');
+//     font-display: swap;
+//   }
+  
+//   @font-face {
+//     font-family: 'GT-Eesti-LC-Display-Medium';
+//     font-weight: 500;
+//     font-style: normal;
+//     src: 
+//       url('../fonts/GT-Eesti-LC-Display-Medium.ttf') format('ttf'),
+//       url('../fonts/GT-Eesti-LC-Display-Medium.woff2') format('woff2'),
+//       url('../fonts/GT-Eesti-LC-Display-Medium.woff') format('woff');
+//     font-display: swap;
+//   }
+
 @font-face {
-    font-family: 'GT-Eesti-LC-Display-Light';
-    font-weight: 300;
-    font-style: normal;
-    src: local('GT-Eesti-LC-Display-Light'),
-      url('../fonts/GT-Eesti-LC-Display-Light.woff2') format('woff2'),
-      url('../fonts/GT-Eesti-LC-Display-Light.woff') format('woff');
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'GT-Eesti-LC-Text-Regular';
-    font-weight: 400;
-    font-style: normal;
-    src: local('GT-Eesti-LC-Text-Regular'),
-      url('../fonts/GT-Eesti-LC-Text-Regular.woff2') format('woff2'),
-      url('../fonts/GT-Eesti-LC-Text-Regular.woff') format('woff');
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'GT-Eesti-LC-Display-Medium';
-    font-weight: 500;
-    font-style: normal;
-    src: local('GT-Eesti-LC-Display-Medium'),
-      url('../fonts/GT-Eesti-LC-Display-Medium.woff2') format('woff2'),
-      url('../fonts/GT-Eesti-LC-Display-Medium.woff') format('woff');
-    font-display: swap;
-  }
-  
+  font-family: 'Commissioner-Light';
+  font-weight: 300;
+  font-style: normal;
+  src: 
+    url('../fonts/Commissioner-Light.ttf') format('ttf'),
+    url('../fonts/Commissioner-Light.woff2') format('woff2'),
+    url('../fonts/Commissioner-Light.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Commissioner-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: 
+      url('../fonts/Commissioner-Regular.ttf') format('ttf'),
+      url('../fonts/Commissioner-Regular.woff2') format('woff2'),
+      url('../fonts/Commissioner-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Commissioner-Bold';
+  font-weight: 500;
+  font-style: normal;
+  src: 
+  url('../fonts/Commissioner-Bold.ttf') format('ttf'),
+  url('../fonts/Commissioner-Bold.woff2') format('woff2'),
+  url('../fonts/Commissioner-Bold.woff') format('woff');
+  font-display: swap;
+}
+
   :root {
     --accent-r: #D64751;
     --primary: #8C64D7;
@@ -44,7 +81,7 @@
   }
   
   body {
-    font-family: 'GT-Eesti-LC-Display-Light';
+    font-family: 'Commissioner-Regular';
     font-size: 16px;
     font-weight: 300;
     line-height: calc(19/16*100%);
@@ -62,7 +99,7 @@
   }
   
   ._title {
-    font-family: 'GT-Eesti-LC-Display-Medium';
+    font-family: 'Commissioner-Bold';
     text-transform: uppercase;
     padding: 8px 0;
   }

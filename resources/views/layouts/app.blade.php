@@ -87,7 +87,7 @@
                     </svg>
                 </a>
                 <nav class="menu hidden xl:block">
-                    <ul class="flex items-center gap-2 text-base font-eesti-300">
+                    <ul class="flex items-center gap-2 text-base font-commissioner-300">
                         <li>
                             <a href="/#etapy" class="px-1 2xl:px-4">Этапы проведения</a>
                         </li>
@@ -104,7 +104,7 @@
                 </nav>
                 @auth
                     <div
-                        class="min-h-[30px] w-fit xl:w-min text-center 2xl:w-fit px-5 flex justify-center items-center rounded-full bg-azure ml-auto xl:ml-0 font-eesti-300 sm:font-eesti-400 text-white text-xs/[120%] sm:text-sm lg:text-base/[120%] user-block">
+                        class="min-h-[30px] w-fit xl:w-min text-center 2xl:w-fit px-5 flex justify-center items-center rounded-full bg-azure ml-auto xl:ml-0 font-commissioner-300 sm:font-commissioner-400 text-white text-xs/[120%] sm:text-sm lg:text-base/[120%] user-block">
                         {{ auth()->user()->first_name . " " . auth()->user()->last_name }}
                         <ul class="user-nav">
                             <li class="user-nav__item">
@@ -136,7 +136,7 @@
         <div class="bg-primary popup z-20" id="popup-menu">
             <div class="container">
                 <ul
-                    class="text-base font-eesti-300 py-10 flex flex-col justify-center items-center gap-4 md:gap-6 h-[calc(100vh - 92px)] text-white">
+                    class="text-base font-commissioner-300 py-10 flex flex-col justify-center items-center gap-4 md:gap-6 h-[calc(100vh - 92px)] text-white">
                     <li>
                         <a href="/#etapy" class="text-2xl md:text-[44px]">Этапы проведения</a>
                     </li>

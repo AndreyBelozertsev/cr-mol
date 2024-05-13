@@ -88,7 +88,7 @@
                     </svg>
                 </a>
                 <nav class="menu hidden xl:block">
-                    <ul class="flex items-center gap-2 text-base font-eesti-300">
+                    <ul class="flex items-center gap-2 text-base font-commissioner-300">
                         <li>
                             <a href="#etapy" class="px-1 2xl:px-4">Этапы проведения</a>
                         </li>
@@ -105,7 +105,7 @@
                 </nav>
                 @auth
                     <div
-                        class="min-h-[30px] w-fit xl:w-min text-center 2xl:w-fit px-5 flex justify-center items-center rounded-full bg-azure ml-auto xl:ml-0 font-eesti-300 sm:font-eesti-400 text-white text-xs/[120%] sm:text-sm lg:text-base/[120%] user-block">
+                        class="min-h-[30px] w-fit xl:w-min text-center 2xl:w-fit px-5 flex justify-center items-center rounded-full bg-azure ml-auto xl:ml-0 font-commissioner-300 sm:font-commissioner-400 text-white text-xs/[120%] sm:text-sm lg:text-base/[120%] user-block">
                         {{ auth()->user()->first_name . " " . auth()->user()->last_name }}
                         <ul class="user-nav">
                             <li class="user-nav__item">
@@ -137,7 +137,7 @@
         <div class="popup z-20 bg-white" id="popup-menu">
             <div class="container">
                 <ul
-                    class="text-base font-eesti-300 py-10 flex flex-col justify-center items-center gap-4 md:gap-6 h-[calc(100vh - 92px)] text-primary">
+                    class="text-base font-commissioner-300 py-10 flex flex-col justify-center items-center gap-4 md:gap-6 h-[calc(100vh - 92px)] text-primary">
                     <li>
                         <a href="#etapy" class="text-2xl md:text-[44px]">Этапы проведения</a>
                     </li>
@@ -160,13 +160,13 @@
         <section class="bg-no-repeat bg-right pt-10 md:pt-20 pb-24 lg:pb-[200px]"
             style="background-image:url('{{ asset('images/icons/front-block.svg')}}')">
             <div class="container">
-                <div class="flex items-center justify-between flex-wrap relative pb-80 sm:pb-72 md:pb-[350px] 2xl:pb-0">
+                <div class="flex items-center justify-between flex-wrap relative pb-80 sm:pb-80 md:pb-[370px] 2xl:pb-0">
                     <div>
                         <h1
-                            class="text-3xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-title max-w-[680px] py-2 mb-5 sm:mb-8 lg:mb-[100px] font-eesti-500 uppercase">крым молодёжный это –
+                            class="text-3xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-title max-w-[680px] py-2 mb-5 sm:mb-8 lg:mb-[100px] font-commissioner-700 uppercase tracking-tighter">крым молодёжный это&nbsp;–
                         </h1>
                         <p class="text-[21px]/[calc(24/21*100%)] max-w-[568px]">
-                            Республиканская премия общественного признания в 2024 году, направленная на выявление
+                            Республиканская премия общественного признания в&nbsp;2024&nbsp;году, направленная на выявление
                             и признание заслуг
                             крымской
                             молодёжи, имеющей особые достижения в различных областях социальной, экономической, научной,
@@ -176,19 +176,19 @@
                     </div>
                     <div class="absolute right-0 bottom-0 xs:pr-[30px]">
                         <div
-                            class="bg-accent p-5 text-xl/[1] xs:text-xl max-w-full left-0 top-[-140px] xs:max-w-[300px] rounded-[20px] xs:left-auto xs:right-0 xs:top-[-106px] md:right-auto md:py-[30px] md:pl-7 md:pr-12 md:max-w-[380px] md:rounded-[26px] md:text-[28px]/[calc(32/28*100%)] text-primary font-eesti-500 absolute z-[1] md:-top-32 md:left-[-62px]">
+                            class="bg-accent p-5 text-xl/[1] xs:text-xl max-w-full left-0 top-[-140px] xs:max-w-[300px] rounded-[20px] xs:left-auto xs:right-0 xs:top-[-156px] md:right-auto md:py-[30px] md:pl-7 md:pr-12 md:max-w-[380px] md:rounded-[26px] md:text-[28px]/[calc(32/28*100%)] text-primary font-commissioner-700 absolute z-[1] md:-top-40 md:left-[-62px]">
                             Самые яркие представители молодёжи полуострова
                         </div>
                         <div
-                            class="text-black p-5 text-lg/[1] max-w-full xs:max-w-[240px] rounded-[20px] left-0 -top-16 md:text-xl/[calc(20.5/20*100%)] md:py-6 md:pl-7 md:pr-10 md:rounded-[26px] md:max-w-[260px] bg-soft-blue font-eesti-300 absolute md:top-1 md:left-[-208px]">
+                            class="text-black p-5 text-lg/[1] max-w-full xs:max-w-[240px] rounded-[20px] left-0 -top-16 md:text-xl/[calc(20.5/20*100%)] md:py-6 md:pl-7 md:pr-10 md:rounded-[26px] md:max-w-[260px] bg-soft-blue font-commissioner-300 absolute md:top-1 md:left-[-208px]">
                             Главное событие в сфере молодёжной политики Крыма
                         </div>
                         <div
-                            class="bg-primary-light p-8 pl-9 text-xl/[1] xs:text-2xl rounded-[20px] md:text-[28px]/[calc(32/28*100%)] md:py-10 md:pl-16 md:pr-12 md:rounded-[30px] md:max-w-[468px] font-eesti-500">
+                            class="bg-primary-light p-8 pl-9 text-xl/[1] xs:text-2xl rounded-[20px] md:text-[28px]/[calc(32/28*100%)] md:py-10 md:pl-16 md:pr-12 md:rounded-[30px] md:max-w-[468px] font-commissioner-700">
                             Общественное признание достижений молодых крымчан на региональном уровне
                         </div>
                         <div
-                            class="bg-white rounded-[18px] pl-7 py-[17px] pr-10 text-primary font-eesti-300 text-xl/[calc(20.5/20*100%)] max-w-[190px] absolute right-0 bottom-[-22px]">
+                            class="bg-white rounded-[18px] pl-7 py-[17px] pr-10 text-primary font-commissioner-300 text-xl/[calc(20.5/20*100%)] max-w-[190px] absolute right-0 bottom-[-52px]">
                             {{ $categories->count() }} номинаций
                         </div>
                     </div>
@@ -213,8 +213,8 @@
                                     <div class="bg-primary bottom-[17px] right-[17px] pulse"></div>
                                 </div>
                                 <div class="max-w-[300px]">
-                                    <p class="mb-2 font-eesti-300 text-base/[calc(19/16*100%)]">13 мая - 16 мая</p>
-                                    <p class="font-eesti-500 text-xl/[calc(20.5/20*100%)]">
+                                    <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">13 мая - 16 мая</p>
+                                    <p class="font-commissioner-700 text-xl/[calc(20.5/20*100%)]">
                                         Рассмотрение заявок экспертным советом
                                     </p>
                                 </div>
@@ -225,8 +225,8 @@
                                     <div class="bg-primary bottom-[17px] right-[17px] pulse"></div>
                                 </div>
                                 <div class="max-w-[300px]">
-                                    <p class="mb-2 font-eesti-300 text-base/[calc(19/16*100%)]">29 июня</p>
-                                    <p class="font-eesti-500 text-xl/[calc(20.5/20*100%)]">
+                                    <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">29 июня</p>
+                                    <p class="font-commissioner-700 text-xl/[calc(20.5/20*100%)]">
                                         Торжественное награждение победителей
                                     </p>
                                 </div>
@@ -237,8 +237,8 @@
                                     <div class="bg-accent-dark top-[17px] left-[17px] pulse"></div>
                                 </div>
                                 <div class="max-w-[300px] mt-auto absolute left-[50px] top-[100px]">
-                                    <p class="mb-2 font-eesti-300 text-base/[calc(19/16*100%)]">12 апреля - 13 мая</p>
-                                    <p class="font-eesti-500 text-xl/[calc(20.5/20*100%)]">
+                                    <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">12 апреля - 13 мая</p>
+                                    <p class="font-commissioner-700 text-xl/[calc(20.5/20*100%)]">
                                         Заявочная компания
                                     </p>
                                 </div>
@@ -249,8 +249,8 @@
                                     <div class="bg-accent-dark top-[17px] left-[17px] pulse"></div>
                                 </div>
                                 <div class="max-w-[300px] mt-auto absolute left-[50px] top-[100px]">
-                                    <p class="mb-2 font-eesti-300 text-base/[calc(19/16*100%)]">17 мая - 17 июня</p>
-                                    <p class="font-eesti-500 text-xl/[calc(20.5/20*100%)]">
+                                    <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">17 мая - 17 июня</p>
+                                    <p class="font-commissioner-700 text-xl/[calc(20.5/20*100%)]">
                                         Проведение народного голосования
                                     </p>
                                 </div>
@@ -268,8 +268,8 @@
                                 <div class="bg-accent-dark pulse top-[17px] left-[17px]"></div>
                             </div>
                             <div class="max-w-[300px] relative bottom-4">
-                                <p class="mb-2 font-eesti-300 text-base/[calc(19/16*100%)]">12 апреля - 13 мая</p>
-                                <p class="font-eesti-500 text-base/[1] tex xs:text-xl/[calc(20.5/20*100%)]">
+                                <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">12 апреля - 13 мая</p>
+                                <p class="font-commissioner-700 text-base/[1] tex xs:text-xl/[calc(20.5/20*100%)]">
                                     Заявочная компания
                                 </p>
                             </div>
@@ -280,8 +280,8 @@
                                 <div class="bg-primary pulse bottom-[17px] left-[17px]"></div>
                             </div>
                             <div class="max-w-[300px] relative bottom-2 xs:static">
-                                <p class="mb-2 font-eesti-300 text-base/[calc(19/16*100%)]">13 мая - 16 мая</p>
-                                <p class="font-eesti-500 text-base/[1] xs:text-xl/[calc(20.5/20*100%)]">
+                                <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">13 мая - 16 мая</p>
+                                <p class="font-commissioner-700 text-base/[1] xs:text-xl/[calc(20.5/20*100%)]">
                                     Рассмотрение заявок экспертным советом
                                 </p>
                             </div>
@@ -292,8 +292,8 @@
                                 <div class="bg-accent-dark pulse top-[17px] left-[17px]"></div>
                             </div>
                             <div class="max-w-[300px] relative bottom-2 xs:static">
-                                <p class="mb-2 font-eesti-300 text-base/[calc(19/16*100%)]">17 мая - 17 июня</p>
-                                <p class="font-eesti-500 text-base/[1] xs:text-xl/[calc(20.5/20*100%)]">
+                                <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">17 мая - 17 июня</p>
+                                <p class="font-commissioner-700 text-base/[1] xs:text-xl/[calc(20.5/20*100%)]">
                                     Проведение народного голосования
                                 </p>
                             </div>
@@ -304,8 +304,8 @@
                                 <div class="bg-primary pulse bottom-[17px] left-[17px]"></div>
                             </div>
                             <div class="max-w-[300px] relative bottom-2 xs:static">
-                                <p class="mb-2 font-eesti-300 text-base/[calc(19/16*100%)]">29 июня</p>
-                                <p class="font-eesti-500 text-base/[1] xs:text-xl/[calc(20.5/20*100%)]">
+                                <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">29 июня</p>
+                                <p class="font-commissioner-700 text-base/[1] xs:text-xl/[calc(20.5/20*100%)]">
                                     Торжественное награждение победителей
                                 </p>
                             </div>

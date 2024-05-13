@@ -27,9 +27,9 @@ export default {
       },
     },
     fontFamily: {
-      "eesti-300":   "GT-Eesti-LC-Display-Light",
-      "eesti-400":   "GT-Eesti-LC-Text-Regular",
-      "eesti-500":   "GT-Eesti-LC-Display-Medium",
+      "commissioner-300": "Commissioner-Light",
+      "commissioner-400": "Commissioner-Regular",
+      "commissioner-700": "Commissioner-Bold",
     },
     extend: {
       colors: {

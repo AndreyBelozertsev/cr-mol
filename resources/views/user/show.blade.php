@@ -8,12 +8,12 @@
         </div>
         @fullInformation
             <p
-                class="text-center font-eesti-500 tracking-wide text-xl w-fit px-5 py-3 rounded text-primary bg-accent mb-10">
+                class="text-center font-commissioner-700 tracking-wide text-xl w-fit px-5 py-3 rounded text-primary bg-accent mb-10">
                 Ваш профиль полностью заполнен, можете приступать к голосованию!
             </p>
         @else
             <p
-                class="text-center font-eesti-500 tracking-wide text-xl w-fit px-5 py-3 rounded text-accent-r bg-accent mb-10">
+                class="text-center font-commissioner-700 tracking-wide text-xl w-fit px-5 py-3 rounded text-accent-r bg-accent mb-10">
                 Внимание! Для участия в голосовании необходимо
                 заполнить контактную иннформацию!
             </p>

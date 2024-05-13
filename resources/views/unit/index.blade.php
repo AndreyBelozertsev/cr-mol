@@ -23,7 +23,7 @@
                                     </a>
                                 </div>
                                 <div class="flex flex-col justify-between">
-                                    <h4 class="mb-3 text-lg xs:text-[21px]/[calc(24/21*100%)] uppercase font-eesti-500">
+                                    <h4 class="mb-3 text-lg xs:text-[21px]/[calc(24/21*100%)] uppercase font-commissioner-700">
                                         <a href="{{ route('unit.show', $unit->slug) }}">{{ $unit->title }}</a>
                                     </h4>
                                     <p class="line-clamp-6 mb-2">

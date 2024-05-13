@@ -12,15 +12,15 @@
     <div class="container">
         <ul class="text-primary-light flex gap-9 gap-y-2 flex-wrap">
             <li>
-                <a class="font-eesti-300 text-xl/[calc(20.5/20*100%)]" href="/">Премия Крым Молодёжный</a>
+                <a class="font-commissioner-300 text-xl/[calc(20.5/20*100%)]" href="/">Премия Крым Молодёжный</a>
             </li>
             <li>
-                <a class="font-eesti-300 text-xl/[calc(20.5/20*100%)]"
+                <a class="font-commissioner-300 text-xl/[calc(20.5/20*100%)]"
                     href="{{ route('category.show', $unit->category->slug) }}">Номинация
                     «{{ $unit->category->title  }}»</a>
             </li>
             <li class="active text-primary">
-                <span class="font-eesti-500 text-xl/[calc(20.5/20*100%)]">{{ $unit->title }}</span>
+                <span class="font-commissioner-700 text-xl/[calc(20.5/20*100%)]">{{ $unit->title }}</span>
             </li>
         </ul>
     </div>
@@ -41,7 +41,7 @@
             </div>
             <div class="w-full text-black text-lg md:text-xl/[calc(20.5/20*100%)] mr-auto relative pt-10 2xl:pt-0">
                 <h1
-                    class="text-black uppercase font-eesti-500 mb-5 lg:mb-10 text-3xl xs:text-4xl lg:text-5xl 2xl:text-6xl/[1] max-w-[615px]">
+                    class="text-black uppercase font-commissioner-700 mb-5 lg:mb-10 text-3xl xs:text-4xl lg:text-5xl 2xl:text-6xl/[1] max-w-[615px]">
                     {{ $unit->title }}
                 </h1>
                 <div>
