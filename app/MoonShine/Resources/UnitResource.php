@@ -92,7 +92,7 @@ class UnitResource extends ModelResource
                         BelongsToMany::make(
                             'Голосов',
                             'users',
-                            fn($item) => "$item->first_name $item->first_name $item->patronymic",
+                            fn($item) => "$item->first_name $item->last_name $item->patronymic",
                                 new UserResource
                         )
                         ->badge('green')

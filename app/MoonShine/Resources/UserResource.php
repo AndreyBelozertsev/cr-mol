@@ -50,6 +50,7 @@ class UserResource extends ModelResource
                             ->readonly(),
 
                         Date::make('Дата рождения','birthday')
+                            ->format('d.m.Y') 
                             ->readonly(),  
                             
                         BelongsTo::make(
