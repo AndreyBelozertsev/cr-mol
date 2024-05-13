@@ -163,18 +163,15 @@
                 <div class="flex items-center justify-between flex-wrap relative pb-80 sm:pb-72 md:pb-[350px] 2xl:pb-0">
                     <div>
                         <h1
-                            class="text-3xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-title max-w-[680px] py-2 mb-5 sm:mb-8 lg:mb-[100px] font-eesti-500 uppercase">
-                            крым
-                            молодёжный
-                            это –
+                            class="text-3xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-title max-w-[680px] py-2 mb-5 sm:mb-8 lg:mb-[100px] font-eesti-500 uppercase">крым молодёжный это –
                         </h1>
                         <p class="text-[21px]/[calc(24/21*100%)] max-w-[568px]">
-                            Республиканская премия общественного признания в 2024 году, направленная на выявление
-                            и признание заслуг
+                            Республиканская премия общественного признания в 2024 году, направленная на выявление
+                            и признание заслуг
                             крымской
-                            молодёжи, имеющей особые достижения в различных областях социальной, экономической, научной,
+                            молодёжи, имеющей особые достижения в различных областях социальной, экономической, научной,
                             инновационной, творческой,
-                            спортивной, общественной и добровольческой деятельности.
+                            спортивной, общественной и добровольческой деятельности.
                         </p>
                     </div>
                     <div class="absolute right-0 bottom-0 xs:pr-[30px]">
@@ -184,11 +181,11 @@
                         </div>
                         <div
                             class="text-black p-5 text-lg/[1] max-w-full xs:max-w-[240px] rounded-[20px] left-0 -top-16 md:text-xl/[calc(20.5/20*100%)] md:py-6 md:pl-7 md:pr-10 md:rounded-[26px] md:max-w-[260px] bg-soft-blue font-eesti-300 absolute md:top-1 md:left-[-208px]">
-                            Главное событие в сфере молодёжной политики Крыма
+                            Главное событие в сфере молодёжной политики Крыма
                         </div>
                         <div
                             class="bg-primary-light p-8 pl-9 text-xl/[1] xs:text-2xl rounded-[20px] md:text-[28px]/[calc(32/28*100%)] md:py-10 md:pl-16 md:pr-12 md:rounded-[30px] md:max-w-[468px] font-eesti-500">
-                            Общественное признание достижений молодых крымчан на региональном уровне
+                            Общественное признание достижений молодых крымчан на региональном уровне
                         </div>
                         <div
                             class="bg-white rounded-[18px] pl-7 py-[17px] pr-10 text-primary font-eesti-300 text-xl/[calc(20.5/20*100%)] max-w-[190px] absolute right-0 bottom-[-22px]">
