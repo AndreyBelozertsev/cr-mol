@@ -8,7 +8,7 @@ document.querySelectorAll(".menu a, #popup-menu a").forEach((link) => {
 });
 
   //menu sticky
-  if (document.querySelector(".header")) {
+if (document.querySelector(".header")) {
     // инициализируем top Navigation
     const topNavigation = document.querySelector(".header");
     // попап меню - блок
