@@ -3,7 +3,7 @@ document.querySelectorAll(".menu a, #popup-menu a").forEach((link) => {
   link.addEventListener("click", function (e) {
     document.getElementById("popup-menu").classList.remove("active");
     document.querySelector(".burger").classList.remove("active");
-    document.querySelector("body").classList.toggle("noscroll");
+    document.querySelector("body").classList.remove("noscroll");
   });
 });
 
