@@ -27,7 +27,7 @@
                                         <a href="{{ route('unit.show', $unit->slug) }}">{{ $unit->title }}</a>
                                     </h4>
                                     <p class="line-clamp-6 mb-2">
-                                        {{ $unit->content }}
+                                        {{ $unit->description }}
                                     </p>
                                     <a class="text-primary-light mt-auto" href="{{ route('unit.show', $unit->slug) }}">Подробнее</a>
                                 </div>

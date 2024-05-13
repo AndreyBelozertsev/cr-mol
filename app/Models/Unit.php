@@ -23,6 +23,7 @@ class Unit extends Model
         'title',
         'slug',
         'address',
+        'description',
         'content',
         'thumbnail',
         'images',

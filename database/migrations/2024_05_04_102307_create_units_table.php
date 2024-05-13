@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('slug')->unique();
             $table->string('address')->nullable();
             $table->string('age')->nullable();
+            $table->text('description')->nullable();
             $table->text('content')->nullable();
             $table->string('thumbnail')->nullable();
             $table->text('images')->nullable();

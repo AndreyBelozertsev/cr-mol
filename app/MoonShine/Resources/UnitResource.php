@@ -54,6 +54,9 @@ class UnitResource extends ModelResource
                         Text::make('Возраст','age')
                             ->hideOnIndex(),
 
+                        Textarea::make('Краткое описание', 'description')
+                            ->hideOnIndex(), 
+
                         Textarea::make('Описание', 'content')
                             ->hideOnIndex(), 
 
@@ -117,6 +120,7 @@ class UnitResource extends ModelResource
             'thumbnail' => ['sometimes','image','mimes:jpeg,png,jpg,gif,svg','max:4096','nullable'],
             'address' => ['sometimes', 'max:150'],
             'age' => ['sometimes','max:30','nullable'],
+            'description' => [],
             'content' => [],
             'status' => ['required','boolean'],
             'category_id' => ['required','numeric', 'max:' . Category::max('id')],

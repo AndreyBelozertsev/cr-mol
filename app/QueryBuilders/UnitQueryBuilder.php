@@ -25,6 +25,6 @@ class UnitQueryBuilder extends Builder
     {
         return $this->active()
             ->orderBy('title', 'asc')
-            ->select(['id','title','slug','thumbnail','content', 'status', 'category_id']);
+            ->select(['id','title','slug','thumbnail','description', 'status', 'category_id']);
     }
 }
