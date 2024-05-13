@@ -34,8 +34,9 @@ if( document.getElementsByClassName('vote_form') ){
             if(response.success){
                 hideAllModals();
                 openModal('modal-response');
-                responseBlock.innerHTML = response.success;
-                submitButton.disabled = false;
+                responseModal.addEventListener("hideModal", function(event) {
+                    window.location.reload();
+                });
             }else{
                 submitButton.disabled = false;
                 hideAllModals();

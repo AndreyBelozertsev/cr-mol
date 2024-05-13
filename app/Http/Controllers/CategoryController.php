@@ -18,10 +18,11 @@ class CategoryController extends Controller
                 return $query->where('slug', $slug);
             })
             ->activeItems()
-            //->withCount('users')
             ->paginate(24);
 
-            return view("unit.index", compact(['category', 'units']));
+            $isDisabledVoteButton = isDisableVoteButton($category->id);
+
+            return view("unit.index", compact(['category', 'units', 'isDisabledVoteButton']));
         }
         return view("category.index", compact(['category']));
 

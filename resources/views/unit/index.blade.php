@@ -34,7 +34,7 @@
                             </div>
                             <form class="vote_form" method="POST" action="{{ route('vote', ['id' => $unit->id]) }}">
                                 @csrf
-                                <button class="text-white bg-primary w-full py-2.5 rounded-lg" type="submit">
+                                <button class="text-white bg-primary disabled:bg-gray w-full py-2.5 rounded-lg" @if($isDisabledVoteButton) disabled="disabled" @endif type="submit">
                                 Голосовать
                                 </button>
                             </form>

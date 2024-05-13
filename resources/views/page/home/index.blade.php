@@ -104,14 +104,21 @@
                     </ul>
                 </nav>
                 @auth
-                    <form action="{{ route('logout') }}" method="POST">
-                        @csrf
-                        <button>Выход</button>
-                    </form>
-                    <a href="{{ route('profile')  }}"
-                        class="min-h-[50px] w-fit xl:w-min text-center 2xl:w-fit px-5 flex justify-center items-center rounded-full bg-azure ml-auto xl:ml-0 font-eesti-400 text-white text-sm sm:text-base">
+                    <div
+                        class="min-h-[30px] w-fit xl:w-min text-center 2xl:w-fit px-5 flex justify-center items-center rounded-full bg-azure ml-auto xl:ml-0 font-eesti-300 sm:font-eesti-400 text-white text-xs/[120%] sm:text-sm lg:text-base/[120%] user-block">
                         {{ auth()->user()->first_name . " " . auth()->user()->last_name }}
-                    </a>
+                        <ul class="user-nav">
+                            <li class="user-nav__item">
+                                <a class="user-nav__link" href="{{ route('profile')  }}">Профиль</a>
+                            </li>
+                            <li class="user-nav__item">
+                                <form action="{{ route('logout') }}" method="POST">
+                                    @csrf
+                                    <button class="user-nav__link">Выйти</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
                 @endauth
                 @guest
                     <a href="{{ route('socailite.redirect','vkontakte') }}"
@@ -256,11 +263,11 @@
                     <div class="absolute top-[41%] h-[2px] bg-gray w-screen"></div>
                 </div>
                 <div class="container block relative lg:hidden">
-                    <div class="absolute bg-gray w-[2px] h-full left-1/4"></div>
+                    <div class="absolute bg-gray w-[2px] h-full left-[24%] md:left-[24.75%]"></div>
                     <div class="ml-[25%] pl-2.5 pt-10">
                         <div class="relative mt-12 xs:mt-16">
                             <div class="absolute bottom-4 -rotate-90 translate-x-1 inline-block">
-                                <img src="/images/icons/point-bottom.svg" alt="">
+                                <img class="h-[144px]" src="/images/icons/point-bottom.svg" alt="">
                                 <div class="bg-accent-dark pulse top-[17px] left-[17px]"></div>
                             </div>
                             <div class="max-w-[300px] relative bottom-4">
@@ -272,7 +279,7 @@
                         </div>
                         <div class="relative mt-16">
                             <div class="absolute bottom-4 rotate-90 translate-x-1 inline-block">
-                                <img src="/images/icons/point-top.svg" alt="">
+                                <img class="h-[144px]" src="/images/icons/point-top.svg" alt="">
                                 <div class="bg-primary pulse bottom-[17px] left-[17px]"></div>
                             </div>
                             <div class="max-w-[300px] relative bottom-2 xs:static">
@@ -284,7 +291,7 @@
                         </div>
                         <div class="relative mt-16">
                             <div class="absolute bottom-4 -rotate-90 translate-x-1 inline-block">
-                                <img src="/images/icons/point-bottom.svg" alt="">
+                                <img class="h-[144px]" src="/images/icons/point-bottom.svg" alt="">
                                 <div class="bg-accent-dark pulse top-[17px] left-[17px]"></div>
                             </div>
                             <div class="max-w-[300px] relative bottom-2 xs:static">
@@ -296,7 +303,7 @@
                         </div>
                         <div class="relative mt-16">
                             <div class="absolute bottom-4 rotate-90 translate-x-1 inline-block">
-                                <img src="/images/icons/point-top.svg" alt="">
+                                <img class="h-[144px]" src="/images/icons/point-top.svg" alt="">
                                 <div class="bg-primary pulse bottom-[17px] left-[17px]"></div>
                             </div>
                             <div class="max-w-[300px] relative bottom-2 xs:static">
@@ -322,9 +329,9 @@
                         </h3>
                         <div class="grid md:grid-cols-2 2xl:grid-cols-3 gap-4 text-white">
                             @foreach ($categories as $category)
-                            @if($category->type_of->value == 'standart')
-                            <x-category.standart.list-item :category="$category" />
-                            @endif
+                                @if($category->type_of->value == 'standart')
+                                    <x-category.standart.list-item :category="$category" />
+                                @endif
                             @endforeach
                         </div>
                     </div>
@@ -338,9 +345,9 @@
                     </h3>
                     <div class="grid md:grid-cols-2 2xl:grid-cols-3 gap-4 text-black">
                         @foreach ($categories as $category)
-                        @if($category->type_of->value == 'special')
-                        <x-category.special.list-item :category="$category" />
-                        @endif
+                            @if($category->type_of->value == 'special')
+                                <x-category.special.list-item :category="$category" />
+                            @endif
                         @endforeach
                     </div>
                 </div>
@@ -369,18 +376,18 @@
         <div class="container">
             <div class="flex justify-between flex-wrap gap-2.5">
                 @isset( $setting['organization'] )
-                <p>
-                    Организаторы: {{ $setting['organization'] }}
-                </p>
+                    <p>
+                        Организаторы: {{ $setting['organization'] }}
+                    </p>
                 @endisset
                 <div class="flex justify-between flex-wrap gap-2.5">
                     @isset( $setting['address'] )
-                    <p class="mr-[70px]">
-                        {{ $setting['address'] }}
-                    </p>
+                        <p class="mr-[70px]">
+                            {{ $setting['address'] }}
+                        </p>
                     @endisset
                     @isset( $setting['email'] )
-                    <a href="mailto:{{ $setting['email'] }}">{{ $setting['email'] }}</a>
+                        <a href="mailto:{{ $setting['email'] }}">{{ $setting['email'] }}</a>
                     @endisset
                 </div>
             </div>

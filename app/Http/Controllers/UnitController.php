@@ -13,8 +13,10 @@ class UnitController extends Controller
     }
     public function show($slug)
     {
-        $unit = Unit::activeItem($slug)->withCount('users')->firstOrFail();
+        $unit = Unit::activeItem($slug)->firstOrFail();
+
+        $isDisabledVoteButton = isDisableVoteButton($unit->category->id);
   
-        return view('unit.show', ['unit' => $unit]);
+        return view('unit.show', compact( 'unit', 'isDisabledVoteButton'));
     }
 }

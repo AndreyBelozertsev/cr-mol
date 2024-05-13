@@ -51,3 +51,20 @@ if (!function_exists('isCorrectProfile')) {
         return auth()->user() && $user->first_name && $user->last_name && $user->phone && $user->birthday &&  $user->city_id;
     }
 }
+
+
+if (!function_exists('isDisableVoteButton')) {
+
+    function isDisableVoteButton(int $category_id){
+        $status = false;
+
+        $user = Auth::user();
+
+        if(auth()->user() && $user->units()->whereHas('category',function($q) use($category_id){
+                $q->where('id', $category_id);
+        })->count()){
+            $status = true;
+        }
+        return $status;
+    }
+}

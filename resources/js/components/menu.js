@@ -25,8 +25,6 @@
                 popupMenu.classList.remove("top-scroll"));
         
         }
-        // если координаты окна больше 80, то добавляем класс, иначе - нет
-
       });
     }
   
@@ -52,6 +50,23 @@
       body.classList.toggle("noscroll");
     });
   }
+
+
+
+if (document.querySelector(".user-block")) {
+  const userBlock = document.querySelector(".user-block");
+  const userNav = document.querySelector(".user-nav");
+
+  userBlock.addEventListener("click", function () {
+    userNav.classList.toggle("show");
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!e.target.classList.contains("user-block")){
+      userNav.classList.remove("show");
+    }
+  });
+}
   
   
   

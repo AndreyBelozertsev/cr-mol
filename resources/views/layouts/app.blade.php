@@ -103,14 +103,21 @@
                     </ul>
                 </nav>
                 @auth
-                <form action="{{ route('logout') }}" method="POST">
-                    @csrf
-                    <button>Выход</button>
-                </form>
-                <a href="{{ route('profile')  }}"
-                    class="min-h-[50px] w-fit xl:w-min text-center 2xl:w-fit px-5 flex justify-center items-center rounded-full bg-azure ml-auto xl:ml-0 font-eesti-400 text-white text-sm sm:text-base">
-                    {{ auth()->user()->first_name . " " . auth()->user()->last_name }}
-                </a>
+                    <div
+                        class="min-h-[30px] w-fit xl:w-min text-center 2xl:w-fit px-5 flex justify-center items-center rounded-full bg-azure ml-auto xl:ml-0 font-eesti-300 sm:font-eesti-400 text-white text-xs/[120%] sm:text-sm lg:text-base/[120%] user-block">
+                        {{ auth()->user()->first_name . " " . auth()->user()->last_name }}
+                        <ul class="user-nav">
+                            <li class="user-nav__item">
+                                <a class="user-nav__link" href="{{ route('profile')  }}">Профиль</a>
+                            </li>
+                            <li class="user-nav__item">
+                                <form action="{{ route('logout') }}" method="POST">
+                                    @csrf
+                                    <button class="user-nav__link">Выйти</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
                 @endauth
                 @guest
                 <a href="{{ route('socailite.redirect','vkontakte') }}"
