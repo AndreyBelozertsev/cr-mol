@@ -12,10 +12,12 @@
 */
 
 return [
+    'Pagination Navigation' => 'Навигация',
     'showing' => 'Показано от',
     'of' => 'из',
     'to' => 'до',
     'results' => '',
     'previous' => '&laquo; Назад',
     'next' => 'Вперёд &raquo;',
+    'Go to page :page' => "Перейти на страницы :page"
 ];

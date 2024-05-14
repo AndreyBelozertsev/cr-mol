@@ -225,7 +225,7 @@
                                     <div class="bg-primary bottom-[17px] right-[17px] pulse"></div>
                                 </div>
                                 <div class="max-w-[300px]">
-                                    <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">29 июня</p>
+                                    <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">28 июня</p>
                                     <p class="font-commissioner-700 text-xl/[calc(20.5/20*100%)]">
                                         Торжественное награждение победителей
                                     </p>
@@ -304,7 +304,7 @@
                                 <div class="bg-primary pulse bottom-[17px] left-[17px]"></div>
                             </div>
                             <div class="max-w-[300px] relative bottom-2 xs:static">
-                                <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">29 июня</p>
+                                <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">28 июня</p>
                                 <p class="font-commissioner-700 text-base/[1] xs:text-xl/[calc(20.5/20*100%)]">
                                     Торжественное награждение победителей
                                 </p>
