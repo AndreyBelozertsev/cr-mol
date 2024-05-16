@@ -7,7 +7,7 @@
                 {{ $category->title }}
             </h2>
             @if($units->isNotEmpty())
-                <div class="grid lg:grid-cols-2 2xl:grid-cols-3 gap-4 text-black mb-6 md:mb-[60px]">
+                <div class="grid lg:grid-cols-2 3xl:grid-cols-3 gap-4 text-black mb-6 md:mb-[60px]">
                     @foreach ($units as $unit)
                         @php
                             $img = asset('/images/no-img.svg');
