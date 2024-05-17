@@ -92,7 +92,7 @@ return [
     */
 
     'middleware' => [
-        'web',
+        'moonshine',
         Authorize::class,
     ],
 
