@@ -22,6 +22,7 @@ class SocialController extends Controller
     }
 
     public function callback(string $driver){
+        Log::build(['driver' => 'single', 'path' => storage_path('logs/vk-redirect.log')])->info(request());
         if($driver != 'vkontakte'){
             throw new DomainException('произошла ошибка или драйвер не поддерживается ');
         }
