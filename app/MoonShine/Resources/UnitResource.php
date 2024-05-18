@@ -100,6 +100,7 @@ class UnitResource extends ModelResource
                         )
                         ->badge('green')
                         ->onlyCount()
+                        ->selectMode()
                         ->readonly(),
                     ])
                 ])
