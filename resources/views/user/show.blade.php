@@ -15,7 +15,7 @@
             <p
                 class="text-center font-commissioner-700 tracking-wide text-xl w-fit px-5 py-3 rounded text-accent-r bg-accent mb-10">
                 Внимание! Для участия в голосовании необходимо
-                заполнить контактную иннформацию!
+                заполнить контактную информацию!
             </p>
         @endif
         <form class="max-w-[700px] profile_form" method="POST" action="{{ route('profile.store') }}">
