@@ -66,7 +66,7 @@ if (!function_exists('isDisableVoteButton')) {
             $status = true;
         }
 
-        if(NOW() > '2024-06-17 00:00:00'){
+        if(NOW() > config('const.end_vote_terms')){
             $status = true;
         }
 

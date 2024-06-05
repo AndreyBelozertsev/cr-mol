@@ -11,7 +11,7 @@ class LikeController extends Controller
 {
     public function toVote(Request $request, $id)
     {
-        if(NOW() > '2024-06-17 00:00:00'){
+        if(NOW() > config('const.end_vote_terms')){
             return response()->json(['error'=>'К сожалению процесс голосования окончен'],400);
         }
 
