@@ -65,6 +65,11 @@ if (!function_exists('isDisableVoteButton')) {
         })->count()){
             $status = true;
         }
+
+        if(NOW() > '2024-06-17 00:00:00'){
+            $status = true;
+        }
+
         return $status;
     }
 }

@@ -11,6 +11,10 @@ class LikeController extends Controller
 {
     public function toVote(Request $request, $id)
     {
+        if(NOW() > '2024-06-17 00:00:00'){
+            return response()->json(['error'=>'К сожалению процесс голосования окончен'],400);
+        }
+
         if(! Auth::check()){
             return response()->json(['error'=>'Вы не авторизованы - <a class="custom-link" href="' . route('login-vk') . '">войти</a>'],400);
         }
