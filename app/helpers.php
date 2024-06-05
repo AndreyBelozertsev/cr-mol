@@ -70,6 +70,7 @@ if (!function_exists('isDisableVoteButton')) {
             $status = true;
         }
 
+        
         return $status;
     }
 }

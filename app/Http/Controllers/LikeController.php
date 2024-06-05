@@ -18,6 +18,7 @@ class LikeController extends Controller
         if(! Auth::check()){
             return response()->json(['error'=>'Вы не авторизованы - <a class="custom-link" href="' . route('login-vk') . '">войти</a>'],400);
         }
+        
 
         $user = $request->user();
 
