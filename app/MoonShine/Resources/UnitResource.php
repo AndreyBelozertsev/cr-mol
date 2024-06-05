@@ -19,6 +19,7 @@ use MoonShine\Fields\Textarea;
 use MoonShine\Decorations\Tabs;
 use MoonShine\Decorations\Block;
 use Illuminate\Http\UploadedFile;
+use MoonShine\Handlers\ExportHandler;
 use MoonShine\Resources\ModelResource;
 use Illuminate\Database\Eloquent\Model;
 use MoonShine\Components\MoonShineComponent;
@@ -47,7 +48,8 @@ class UnitResource extends ModelResource
                 Tabs::make([
                     Tab::make('Общая информация', [
                         Text::make('Заголовок','title')
-                            ->required(),
+                            ->required()
+                            ->showOnExport(),
 
                         Text::make('Адрес','address'),
 
@@ -77,7 +79,8 @@ class UnitResource extends ModelResource
                             )
                             ->searchable()
                             ->required()
-                            ->badge('purple'),
+                            ->badge('purple')
+                            ->showOnExport(),
                         
                         Image::make('Дополнительные фото','images') 
                             ->hideOnIndex()
@@ -95,13 +98,14 @@ class UnitResource extends ModelResource
                         BelongsToMany::make(
                             'Голосов',
                             'users',
-                            fn($item) => "$item->first_name $item->last_name $item->patronymic",
+                            fn($item) => "$item->last_name $item->first_name $item->patronymic",
                                 new UserResource
                         )
                         ->badge('green')
                         ->onlyCount()
                         ->selectMode()
-                        ->readonly(),
+                        ->readonly()
+                        ->showOnExport(),
                     ])
                 ])
             ]),
@@ -149,6 +153,11 @@ class UnitResource extends ModelResource
     {
         return parent::query()
         ->withCount('users')->orderBy('users_count', 'desc');
+    } 
+
+    public function export(): ?ExportHandler 
+    {
+        return ExportHandler::make('Export');
     } 
 
 }
