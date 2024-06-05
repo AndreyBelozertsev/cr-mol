@@ -11,6 +11,8 @@ use MoonShine\Fields\Field;
 use MoonShine\Decorations\Tab;
 use MoonShine\Decorations\Tabs;
 use MoonShine\Decorations\Block;
+use MoonShine\Handlers\ExportHandler;
+use MoonShine\Handlers\ImportHandler;
 use MoonShine\Resources\ModelResource;
 use Illuminate\Database\Eloquent\Model;
 use MoonShine\Components\MoonShineComponent;
@@ -26,6 +28,11 @@ class UserResource extends ModelResource
 
     protected string $title = 'Участники голосования';
 
+    public function search(): array 
+    {
+        return ['last_name'];
+    }
+
     /**
      * @return list<MoonShineComponent|Field>
      */
@@ -37,21 +44,26 @@ class UserResource extends ModelResource
                     Tab::make('Общая информация', [
                         Text::make('Фамилия','last_name')
                             ->readonly()
-                            ->required(),
+                            ->required()
+                            ->showOnExport(),
 
                         Text::make('Имя','first_name')
                             ->readonly()
-                            ->required(),
+                            ->required()
+                            ->showOnExport(),
 
                         Text::make('Отчество','patronymic')
-                            ->readonly(),
+                            ->readonly()
+                            ->showOnExport(),
                         
                         Text::make('Номер телефона','phone')
-                            ->readonly(),
+                            ->readonly()
+                            ->showOnExport(),
 
                         Date::make('Дата рождения','birthday')
                             ->format('d.m.Y') 
-                            ->readonly(),  
+                            ->readonly()
+                            ->showOnExport(),  
                             
                         BelongsTo::make(
                                 'МО',
@@ -61,10 +73,12 @@ class UserResource extends ModelResource
                             )
                             ->searchable()
                             ->readonly()
-                            ->badge('purple'),
+                            ->badge('purple')
+                            ->showOnExport(),
 
                         Text::make('ID vkontakte','vkontakte_id')
                             ->readonly()
+                            ->showOnExport()
                     ]),
 
 
@@ -101,5 +115,15 @@ class UserResource extends ModelResource
     public function getActiveActions(): array 
     {
         return [ 'view', 'update' ];
+    } 
+
+    public function import(): ?ImportHandler 
+    {
+        return null;
+    }
+ 
+    public function export(): ?ExportHandler
+    {
+        return ExportHandler::make('Export');
     } 
 }

@@ -19,13 +19,15 @@ use MoonShine\Fields\Textarea;
 use MoonShine\Decorations\Tabs;
 use MoonShine\Decorations\Block;
 use Illuminate\Http\UploadedFile;
+use MoonShine\Handlers\ExportHandler;
 use MoonShine\Resources\ModelResource;
+use App\QueryBuilders\UnitQueryBuilder;
 use Illuminate\Database\Eloquent\Model;
 use MoonShine\Components\MoonShineComponent;
 use App\MoonShine\Resources\CategoryResource;
 use MoonShine\Fields\Relationships\BelongsTo;
 use MoonShine\Fields\Relationships\BelongsToMany;
-use Illuminate\Contracts\Database\Eloquent\Builder;
+use Illuminate\Contracts\Database\Eloquent\Builder; 
 
 /**
  * @extends ModelResource<Unit>
@@ -42,7 +44,31 @@ class UnitResource extends ModelResource
     public function fields(): array
     {
         return [
+            Text::make('Заголовок','title')
+                ->required()
+                ->showOnExport(),
 
+            Text::make('Адрес','address'),
+            
+            BelongsTo::make(
+                    'Номинация',
+                    'category',
+                    fn($item) => "$item->title" ,
+                    resource: new CategoryResource()
+                )
+                ->required()
+                ->badge('purple')
+                ->showOnExport(),
+
+            Text::make('Голосов','users_count')
+                ->badge('green')
+                ->showOnExport()
+        ];
+    }
+
+    public function formFields(): array 
+    {
+        return [
             Block::make([
                 Tabs::make([
                     Tab::make('Общая информация', [
@@ -95,7 +121,7 @@ class UnitResource extends ModelResource
                         BelongsToMany::make(
                             'Голосов',
                             'users',
-                            fn($item) => "$item->first_name $item->last_name $item->patronymic",
+                            fn($item) => "$item->last_name $item->first_name $item->patronymic",
                                 new UserResource
                         )
                         ->badge('green')
@@ -106,7 +132,102 @@ class UnitResource extends ModelResource
                 ])
             ]),
         ];
-    }
+    } 
+ 
+    public function detailFields(): array 
+    {
+        return [
+            Block::make([
+                Tabs::make([
+                    Tab::make('Общая информация', [
+                        Text::make('Заголовок','title')
+                            ->required(),
+
+                        Text::make('Адрес','address'),
+
+                        Text::make('Возраст','age')
+                            ->hideOnIndex(),
+
+                        Textarea::make('Краткое описание', 'description')
+                            ->hideOnIndex(), 
+
+                        Textarea::make('Описание', 'content')
+                            ->hideOnIndex(), 
+
+                        Image::make('Фото','thumbnail')
+                            ->allowedExtensions(['jpeg','png','jpg','gif','svg'])
+                            ->customName(function (UploadedFile $file, Image $field){
+                                return getUploadPath('unit') . '/' . Str::random(10) . '.' . $file->extension();
+                            })
+                            ->removable()
+                            ->enableDeleteDir()
+                            ->hideOnIndex(),
+                        
+                        BelongsTo::make(
+                                'Номинация',
+                                'category',
+                                fn($item) => "$item->title" ,
+                                resource: new CategoryResource()
+                            )
+                            ->searchable()
+                            ->required()
+                            ->badge('purple'),
+                        
+                        Image::make('Дополнительные фото','images') 
+                            ->hideOnIndex()
+                            ->multiple()
+                            ->removable() 
+                            ->customName(function (UploadedFile $file, Field $field){
+                                return getUploadPath('unit') . '/' . Str::random(10) . '.' . $file->extension();
+                            })
+                            ->allowedExtensions(['jpeg','png','jpg']),
+
+                        Switcher::make('Активный', 'status')
+                            ->default(true)
+                    ]),
+                    Tab::make('Проголосовавшие', [
+                        BelongsToMany::make(
+                            'Голосов',
+                            'users',
+                            fn($item) => "$item->last_name $item->first_name $item->patronymic",
+                                new UserResource
+                        )
+                        ->badge('green')
+                        ->onlyCount()
+                        ->selectMode()
+                        ->readonly(),
+                    ])
+                ])
+            ]),
+        ];
+    } 
+
+    public function indexFields(): array 
+    {
+        return [
+            Text::make('Заголовок','title')
+                ->required()
+                ->showOnExport(),
+
+            Text::make('Адрес','address'),
+            
+            BelongsTo::make(
+                    'Номинация',
+                    'category',
+                    fn($item) => "$item->title" ,
+                    resource: new CategoryResource()
+                )
+                ->searchable()
+                ->required()
+                ->badge('purple')
+                ->showOnExport(),
+
+            Text::make('Голосов','users_count')
+                ->badge('green')
+                ->showOnExport()
+        ];
+    } 
+ 
 
     /**
      * @param Unit $item
@@ -149,6 +270,11 @@ class UnitResource extends ModelResource
     {
         return parent::query()
         ->withCount('users')->orderBy('users_count', 'desc');
+    } 
+
+    public function export(): ?ExportHandler 
+    {
+        return ExportHandler::make('Export');
     } 
 
 }

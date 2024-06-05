@@ -7,7 +7,6 @@ namespace App\MoonShine\Resources;
 use App\Models\Category;
 use MoonShine\Fields\ID;
 
-use MoonShine\Fields\Relationships\BelongsTo;
 use MoonShine\Fields\Text;
 use Illuminate\Support\Str;
 use MoonShine\Fields\Field;
@@ -17,10 +16,13 @@ use MoonShine\Fields\Switcher;
 use MoonShine\Fields\Textarea;
 use MoonShine\Decorations\Block;
 use Illuminate\Http\UploadedFile;
+use MoonShine\Handlers\ExportHandler;
+use MoonShine\Handlers\ImportHandler;
 use MoonShine\Resources\ModelResource;
-use Illuminate\Database\Eloquent\Model;
 
+use Illuminate\Database\Eloquent\Model;
 use MoonShine\Components\MoonShineComponent;
+use MoonShine\Fields\Relationships\BelongsTo;
 
 /**
  * @extends ModelResource<Category>
@@ -34,6 +36,7 @@ class CategoryResource extends ModelResource
     protected string $sortColumn = 'sort';
 
     protected string $sortDirection = 'ASC';
+
 
     /**
      * @return list<MoonShineComponent|Field>
@@ -71,6 +74,16 @@ class CategoryResource extends ModelResource
         ];
     }
 
+    public function import(): ?ImportHandler 
+    {
+        return null;
+    }
+ 
+    public function export(): ?ExportHandler
+    {
+        return null;
+    } 
+
     /**
      * @param Category $item
      *
@@ -86,5 +99,6 @@ class CategoryResource extends ModelResource
             'status' => ['required','boolean']
         ];
     }
+
 
 }

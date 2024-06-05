@@ -4,13 +4,15 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Resources;
 
-use Illuminate\Database\Eloquent\Model;
 use App\Models\City;
-
-use MoonShine\Resources\ModelResource;
-use MoonShine\Decorations\Block;
 use MoonShine\Fields\ID;
+
 use MoonShine\Fields\Field;
+use MoonShine\Decorations\Block;
+use MoonShine\Handlers\ExportHandler;
+use MoonShine\Handlers\ImportHandler;
+use MoonShine\Resources\ModelResource;
+use Illuminate\Database\Eloquent\Model;
 use MoonShine\Components\MoonShineComponent;
 
 /**
@@ -33,6 +35,16 @@ class CityResource extends ModelResource
             ]),
         ];
     }
+
+    public function import(): ?ImportHandler 
+    {
+        return null;
+    }
+ 
+    public function export(): ?ExportHandler
+    {
+        return null;
+    } 
 
     /**
      * @param City $item
