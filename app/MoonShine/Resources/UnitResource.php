@@ -73,7 +73,8 @@ class UnitResource extends ModelResource
                 Tabs::make([
                     Tab::make('Общая информация', [
                         Text::make('Заголовок','title')
-                            ->required(),
+                            ->required()
+                            ->showOnExport(),
 
                         Text::make('Адрес','address'),
 
@@ -103,7 +104,8 @@ class UnitResource extends ModelResource
                             )
                             ->searchable()
                             ->required()
-                            ->badge('purple'),
+                            ->badge('purple')
+                            ->showOnExport(),
                         
                         Image::make('Дополнительные фото','images') 
                             ->hideOnIndex()
@@ -127,7 +129,8 @@ class UnitResource extends ModelResource
                         ->badge('green')
                         ->onlyCount()
                         ->selectMode()
-                        ->readonly(),
+                        ->readonly()
+                        ->showOnExport(),
                     ])
                 ])
             ]),
