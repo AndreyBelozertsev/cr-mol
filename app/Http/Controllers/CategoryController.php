@@ -20,7 +20,9 @@ class CategoryController extends Controller
             ->activeItems()
             ->paginate(24);
 
-            $isDisabledVoteButton = isDisableVoteButton($category->id);
+            //$isDisabledVoteButton = isDisableVoteButton($category->id);
+
+            $isDisabledVoteButton = true;
 
             return view("unit.index", compact(['category', 'units', 'isDisabledVoteButton']));
         }
