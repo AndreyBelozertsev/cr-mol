@@ -11,9 +11,9 @@ class LikeController extends Controller
 {
     public function toVote(Request $request, $id)
     {
-        if(NOW() > config('const.end_vote_terms')){
+        //if(NOW() > config('const.end_vote_terms')){
             return response()->json(['error'=>'К сожалению процесс голосования окончен'],400);
-        }
+        //}
 
         if(! Auth::check()){
             return response()->json(['error'=>'Вы не авторизованы - <a class="custom-link" href="' . route('login-vk') . '">войти</a>'],400);

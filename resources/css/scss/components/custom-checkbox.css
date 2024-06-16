@@ -1,0 +1,77 @@
+.custom-checkbox-bg:checked + .label-custom-checkbox-bg {
+  background-color: var(--accent-dark);
+  color: var(--accent-dark);
+  transition: 0.75s;
+}
+
+.label-custom-checkbox-bg {
+  transition: 0.8s;
+}
+
+.custom-checkbox-mark input[type=checkbox] {
+  width: auto;
+  opacity: 0.00000001;
+  position: absolute;
+  left: 0;
+  margin-left: -20px;
+}
+
+.custom-checkbox-mark label {
+  position: relative;
+}
+
+.custom-checkbox-mark label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 4px;
+  width: 22px;
+  height: 22px;
+  transition: transform 0.5s ease;
+  border-radius: 6px;
+  border: 1px solid var(--accent-dark);
+}
+
+.custom-checkbox-mark label:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 5px;
+  border-bottom: 1px solid var(--accent-dark);
+  border-left: 1px solid var(--accent-dark);
+  transform: rotate(-45deg) scale(0);
+  transition: transform ease 0.25s;
+  will-change: transform;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+
+.custom-checkbox-mark input[type=checkbox]:checked ~ label::before {
+  color: var(--accent-dark);
+}
+
+.custom-checkbox-mark input[type=checkbox]:checked ~ label::after {
+  transform: rotate(-45deg) scale(1);
+}
+
+.custom-checkbox-mark label {
+  min-height: 34px;
+  display: block;
+  padding-left: 40px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+  vertical-align: sub;
+}
+
+.custom-checkbox-mark label span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-checkbox-mark input[type=checkbox]:focus + label::before {
+  outline: 0;
+}/*# sourceMappingURL=custom-checkbox.css.map */

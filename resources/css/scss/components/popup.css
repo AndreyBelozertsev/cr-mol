@@ -1,0 +1,19 @@
+.popup {
+  position: absolute;
+  border-radius: 30px;
+  max-width: 1356px;
+  margin-top: 10px;
+  height: calc(100vh - 92px);
+  right: 0;
+  left: 0;
+  transform: skew(-90deg);
+  transition: all 0.3s;
+}
+
+.popup.active {
+  transform: skew(0deg);
+}
+
+.popup ul {
+  height: calc(100vh - 92px);
+}/*# sourceMappingURL=popup.css.map */
