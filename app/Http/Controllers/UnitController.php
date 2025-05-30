@@ -15,9 +15,9 @@ class UnitController extends Controller
     {
         $unit = Unit::activeItem($slug)->firstOrFail();
 
-        //$isDisabledVoteButton = isDisableVoteButton($unit->category->id);
+        $isDisabledVoteButton = isDisableVoteButton($unit->category->id);
 
-        $isDisabledVoteButton = true;
+        // $isDisabledVoteButton = true;
   
         return view('unit.show', compact( 'unit', 'isDisabledVoteButton'));
     }

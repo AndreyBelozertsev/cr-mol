@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use App\Models\Page;
 use App\Models\User;
 use App\Models\Category;
+use App\Models\CategoryDirection;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Cache;
 
@@ -31,10 +32,19 @@ class PageController extends Controller
 
     public function home()
     {
-        $categories =Cache::rememberForever('home_page_category', function() {
+        $category_directions = Cache::rememberForever('home_page_category_direction', function() {
+            return CategoryDirection::activeItems()->with([
+                'categories' => fn ($query) => $query->activeItems()->where('category_id', NULL),
+            ])->get();
+       });
+
+        $categories = Cache::rememberForever('home_page_category', function() {
              return Category::activeItems()->where('category_id', NULL)->get();
         });
-        return view('page.home.index', ['categories' => $categories]);
+        return view('page.home.index', [
+            'category_directions' => $category_directions,
+            'categories' => $categories
+        ]);
     }
 
     public function contact()

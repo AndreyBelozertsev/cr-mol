@@ -96,10 +96,7 @@
                             <a href="#nominacii" class="px-1 2xl:px-4">Номинации</a>
                         </li>
                         <li>
-                            <a href="#specnominacii" class="px-1 2xl:px-4">Спецноминации</a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="/documents/Приложение_1_КРЫМ_МОЛОДЕЖНЫЙ_ПОЛОЖЕНИЕ_3.pdf" class="px-1 2xl:px-4">Положение</a>
+                            <a target="_blank" href="/documents/Крым_молодёжный_Положение.pdf" class="px-1 2xl:px-4">Положение</a>
                         </li>
                     </ul>
                 </nav>
@@ -145,10 +142,7 @@
                         <a href="#nominacii" class="text-2xl md:text-[44px]">Номинации</a>
                     </li>
                     <li>
-                        <a href="#specnominacii" class="text-2xl md:text-[44px]">Спецноминации</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="/documents/Приложение_1_КРЫМ_МОЛОДЕЖНЫЙ_ПОЛОЖЕНИЕ_3.pdf" class="text-2xl md:text-[44px]">Положение</a>
+                        <a target="_blank" href="/documents/Крым_молодёжный_Положение.pdf" class="text-2xl md:text-[44px]">Положение</a>
                     </li>
                 </ul>
             </div>
@@ -166,7 +160,7 @@
                             class="text-3xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-title max-w-[680px] py-2 mb-5 sm:mb-8 lg:mb-[100px] font-commissioner-700 uppercase tracking-tighter">крым молодёжный это&nbsp;–
                         </h1>
                         <p class="text-[21px]/[calc(24/21*100%)] max-w-[568px]">
-                            Республиканская премия общественного признания в&nbsp;2024&nbsp;году, направленная на выявление
+                            Республиканская премия общественного признания в&nbsp;2025&nbsp;году, направленная на выявление
                             и признание заслуг
                             крымской
                             молодёжи, имеющей особые достижения в различных областях социальной, экономической, научной,
@@ -201,7 +195,7 @@
                 <div class="container">
                     <h2
                         class="_title text-primary mb-14 lg:mb-[110px] text-3xl xs:text-4xl lg:text-5xl 2xl:text-6xl/[1]">
-                        Этапы проведения Премии в 2024 году
+                        Этапы проведения Премии в 2025 году
                     </h2>
                 </div>
                 <div class="relative hidden lg:block">
@@ -213,7 +207,7 @@
                                     <div class="bg-primary bottom-[17px] right-[17px] pulse"></div>
                                 </div>
                                 <div class="max-w-[300px]">
-                                    <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">13 мая - 16 мая</p>
+                                    <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">1 июня - 11 июня</p>
                                     <p class="font-commissioner-700 text-xl/[calc(20.5/20*100%)]">
                                         Рассмотрение заявок экспертным советом
                                     </p>
@@ -225,7 +219,7 @@
                                     <div class="bg-primary bottom-[17px] right-[17px] pulse"></div>
                                 </div>
                                 <div class="max-w-[300px]">
-                                    <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">28 июня</p>
+                                    <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">27 июня</p>
                                     <p class="font-commissioner-700 text-xl/[calc(20.5/20*100%)]">
                                         Торжественное награждение победителей
                                     </p>
@@ -237,7 +231,7 @@
                                     <div class="bg-accent-dark top-[17px] left-[17px] pulse"></div>
                                 </div>
                                 <div class="max-w-[300px] mt-auto absolute left-[50px] top-[100px]">
-                                    <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">12 апреля - 13 мая</p>
+                                    <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">20 мая - 1 июня</p>
                                     <p class="font-commissioner-700 text-xl/[calc(20.5/20*100%)]">
                                         Заявочная компания
                                     </p>
@@ -249,7 +243,7 @@
                                     <div class="bg-accent-dark top-[17px] left-[17px] pulse"></div>
                                 </div>
                                 <div class="max-w-[300px] mt-auto absolute left-[50px] top-[100px]">
-                                    <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">17 мая - 17 июня</p>
+                                    <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">12 июня - 22 июня</p>
                                     <p class="font-commissioner-700 text-xl/[calc(20.5/20*100%)]">
                                         Проведение народного голосования
                                     </p>
@@ -268,7 +262,7 @@
                                 <div class="bg-accent-dark pulse top-[17px] left-[17px]"></div>
                             </div>
                             <div class="max-w-[300px] relative bottom-4">
-                                <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">12 апреля - 13 мая</p>
+                                <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">20 мая - 1 июня</p>
                                 <p class="font-commissioner-700 text-base/[1] tex xs:text-xl/[calc(20.5/20*100%)]">
                                     Заявочная компания
                                 </p>
@@ -280,7 +274,7 @@
                                 <div class="bg-primary pulse bottom-[17px] left-[17px]"></div>
                             </div>
                             <div class="max-w-[300px] relative bottom-2 xs:static">
-                                <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">13 мая - 16 мая</p>
+                                <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">1 июня - 11 июня</p>
                                 <p class="font-commissioner-700 text-base/[1] xs:text-xl/[calc(20.5/20*100%)]">
                                     Рассмотрение заявок экспертным советом
                                 </p>
@@ -292,7 +286,7 @@
                                 <div class="bg-accent-dark pulse top-[17px] left-[17px]"></div>
                             </div>
                             <div class="max-w-[300px] relative bottom-2 xs:static">
-                                <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">17 мая - 17 июня</p>
+                                <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">12 июня - 22 июня</p>
                                 <p class="font-commissioner-700 text-base/[1] xs:text-xl/[calc(20.5/20*100%)]">
                                     Проведение народного голосования
                                 </p>
@@ -304,7 +298,7 @@
                                 <div class="bg-primary pulse bottom-[17px] left-[17px]"></div>
                             </div>
                             <div class="max-w-[300px] relative bottom-2 xs:static">
-                                <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">28 июня</p>
+                                <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">27 июня</p>
                                 <p class="font-commissioner-700 text-base/[1] xs:text-xl/[calc(20.5/20*100%)]">
                                     Торжественное награждение победителей
                                 </p>
@@ -313,62 +307,36 @@
                     </div>
                 </div>
             </section>
-            <section class="mb-16 lg:mb-[120px]">
+            <section>
                 <div id="nominacii"></div>
                 <div class="container">
                     <h2
                         class="_title text-primary mb-10 lg:mb-[110px] text-3xl xs:text-4xl lg:text-5xl 2xl:text-6xl/[1]">
                         народное голосование
                     </h2>
-                    <div>
-                        <h3 class="_title text-primary mb-5 lg:mb-10 text-2xl lg:text-[38px]/[calc(40/38*100%)]">
-                            номинации премии
-                        </h3>
-                        <div class="grid md:grid-cols-2 2xl:grid-cols-3 gap-4 text-white">
-                            @foreach ($categories as $category)
-                                @if($category->type_of->value == 'standart')
-                                    <x-category.standart.list-item :category="$category" />
-                                @endif
-                            @endforeach
+                </div>
+            </section>
+            @foreach ($category_directions as $direction)
+                <section class="mb-16 lg:mb-[120px]">
+                    <div id="nominacii"></div>
+                    <div class="container">
+                        <div>
+                            <h3 class="_title text-accent mb-5 lg:mb-10 text-2xl lg:text-[38px]/[calc(40/38*100%)]">
+                                Направление <span class="text-primary">"{{ $direction->title }}"</span>
+                            </h3>
+                            <div class="grid md:grid-cols-2 2xl:grid-cols-3 gap-4 text-white">
+                                @foreach ($direction->categories as $category)
+                                    @if($category->type_of->value == 'standart')
+                                        <x-category.standart.list-item :category="$category" />
+                                    @endif
+                                @endforeach
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div id="specnominacii"></div>
-            </section>
-            <section>
-                <div class="container">
-                    <h3 class="_title text-primary mb-5 lg:mb-10 text-2xl lg:text-[38px]/[calc(40/38*100%)]">
-                        Спецноминации Премии
-                    </h3>
-                    <div class="grid md:grid-cols-2 2xl:grid-cols-3 gap-4 text-black">
-                        @foreach ($categories as $category)
-                            @if($category->type_of->value == 'special')
-                                <x-category.special.list-item :category="$category" />
-                            @endif
-                        @endforeach
-                    </div>
-                </div>
-            </section>
+                </section>
+            @endforeach
         </div>
-        <!-- <section class="mb-24 lg:mb-[200px]">
-            <div class="container">
-                <h2
-                    class="_title mb-8 xs:mb-16 lg:mb-[110px] text-3xl xs:text-4xl lg:text-5xl 2xl:text-6xl/[1] text-white">
-                    Партнеры Премии
-                </h2>
-                <div class="flex items-center justify-center 2xl:justify-between flex-wrap gap-5">
-                    <img src="/images/partners/aws.png" alt="">
-                    <img src="/images/partners/microsoft.png" alt="">
-                    <img src="/images/partners/netflix.png" alt="">
-                    <img src="/images/partners/disney.png" alt="">
-                    <img src="/images/partners/alibaba.png" alt="">
-                    <img src="/images/partners/ant.png" alt="">
-                    <img src="/images/partners/adobe.png" alt="">
-                </div>
-            </div>
-        </section> -->
     </main>
-
     <footer class="border-t border-t-white-transparent pt-9 pb-[35px]">
         <div class="container">
             <div class="flex justify-between flex-wrap gap-2.5">

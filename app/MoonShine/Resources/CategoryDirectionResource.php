@@ -15,23 +15,24 @@ use MoonShine\Fields\Number;
 use MoonShine\Fields\Switcher;
 use MoonShine\Fields\Textarea;
 use MoonShine\Decorations\Block;
+use App\Models\CategoryDirection;
 use Illuminate\Http\UploadedFile;
 use MoonShine\Handlers\ExportHandler;
 use MoonShine\Handlers\ImportHandler;
-use MoonShine\Resources\ModelResource;
 
+use MoonShine\Resources\ModelResource;
 use Illuminate\Database\Eloquent\Model;
 use MoonShine\Components\MoonShineComponent;
 use MoonShine\Fields\Relationships\BelongsTo;
 
 /**
- * @extends ModelResource<Category>
+ * @extends ModelResource<CategoryDirection>
  */
-class CategoryResource extends ModelResource
+class CategoryDirectionResource extends ModelResource
 {
-    protected string $model = Category::class;
+    protected string $model = CategoryDirection::class;
 
-    protected string $title = 'Категории';
+    protected string $title = 'Направления';
 
     protected string $sortColumn = 'sort';
 
@@ -47,35 +48,8 @@ class CategoryResource extends ModelResource
             Block::make([
                 Text::make('Заголовок','title'),
 
-                Textarea::make('Описание', 'content'), 
-
-                Image::make('Иконка категории','thumbnail') 
-                    ->hideOnIndex()
-                    ->customName(function (UploadedFile $file, Image $field){
-                        return getUploadPath('category') . '/' . Str::random(10) . '.' . $file->extension();
-                   })
-                    ->allowedExtensions(['jpeg','png','jpg','gif','svg']) ,
-
                 Number::make('Порядок сортировки','sort')
                     ->default(500),
-
-                BelongsTo::make(
-                        'Родительская номинация',
-                        'parent',
-                        fn($item) => "$item->title",
-                        resource: new self()
-                    )
-                    ->nullable()
-                    ->badge('purple'),
-
-                BelongsTo::make(
-                        'Направление',
-                        'category_direction',
-                        fn($item) => "$item->title",
-                        resource: new CategoryDirectionResource()
-                    )
-                    ->nullable()
-                    ->badge('purple'),
             
                 Switcher::make('Активный', 'status')
                     ->default(true)
@@ -103,8 +77,6 @@ class CategoryResource extends ModelResource
     {
         return [
             'title' => ['required', 'max:150'],
-            'thumbnail' => ['sometimes','image','mimes:jpeg,png,jpg,gif,svg','max:4096','nullable'],
-            'content' => [],
             'status' => ['required','boolean']
         ];
     }

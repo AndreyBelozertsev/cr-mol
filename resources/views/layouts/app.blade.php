@@ -95,10 +95,7 @@
                             <a href="/#nominacii" class="px-1 2xl:px-4">Номинации</a>
                         </li>
                         <li>
-                            <a href="/#specnominacii" class="px-1 2xl:px-4">Спецноминации</a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="/documents/Приложение_1_КРЫМ_МОЛОДЕЖНЫЙ_ПОЛОЖЕНИЕ_3.pdf" class="px-1 2xl:px-4">Положение</a>
+                            <a target="_blank" href="/documents/Крым_молодёжный_Положение.pdf" class="px-1 2xl:px-4">Положение</a>
                         </li>
                     </ul>
                 </nav>
@@ -144,10 +141,7 @@
                         <a href="/#nominacii" class="text-2xl md:text-[44px]">Номинации</a>
                     </li>
                     <li>
-                        <a href="/#specnominacii" class="text-2xl md:text-[44px]">Спецноминации</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="/documents/Приложение_1_КРЫМ_МОЛОДЕЖНЫЙ_ПОЛОЖЕНИЕ_3.pdf" class="text-2xl md:text-[44px]">Положение</a>
+                        <a target="_blank" href="/documents/Крым_молодёжный_Положение.pdf" class="text-2xl md:text-[44px]">Положение</a>
                     </li>
                 </ul>
             </div>

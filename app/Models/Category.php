@@ -54,6 +54,11 @@ class Category extends Model
         return $this->belongsTo(self::class, 'category_id', 'id');
     }
 
+    public function category_direction(): BelongsTo
+    {
+        return $this->belongsTo(CategoryDirection::class);
+    }
+
     protected $routeName = 'category.show';
 
     protected function makeUrl($slug = null):string

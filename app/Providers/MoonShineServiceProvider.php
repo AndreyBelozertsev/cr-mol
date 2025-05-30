@@ -19,6 +19,7 @@ use App\MoonShine\Resources\CategoryResource;
 use MoonShine\Resources\MoonShineUserResource;
 use MoonShine\Resources\MoonShineUserRoleResource;
 use MoonShine\Contracts\Resources\ResourceContract;
+use App\MoonShine\Resources\CategoryDirectionResource;
 use MoonShine\Providers\MoonShineApplicationServiceProvider;
 
 class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
@@ -56,6 +57,11 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
                     new CategoryResource()
                 )
                 ->icon('heroicons.outline.light-bulb'),
+            MenuItem::make(
+                    static fn() => 'Направления',
+                    new CategoryDirectionResource()
+                )
+                ->icon('heroicons.outline.academic-cap'),
             MenuItem::make(
                     static fn() => 'Пользователи',
                     new UserResource()

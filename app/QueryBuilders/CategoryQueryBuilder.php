@@ -23,7 +23,7 @@ class CategoryQueryBuilder extends Builder
     {
         return $this->active()
             ->orderBy('sort', 'asc')
-            ->select(['title','slug','sort','thumbnail','content', 'status', 'type_of']);
+            ->select(['title','slug','sort','thumbnail', 'category_direction_id','content', 'status', 'type_of']);
     }
 
 }
