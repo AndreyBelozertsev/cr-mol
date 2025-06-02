@@ -322,7 +322,7 @@
                     <div class="container">
                         <div>
                             <h3 class="_title text-accent mb-5 lg:mb-10 text-2xl lg:text-[38px]/[calc(40/38*100%)]">
-                                Направление <span class="text-primary">"{{ $direction->title }}"</span>
+                                Направление <span class="text-primary"><span class="align-text-top">«</span>{{ $direction->title }}<span class="align-text-top">»</span></span>
                             </h3>
                             <div class="grid md:grid-cols-2 2xl:grid-cols-3 gap-4 text-white">
                                 @foreach ($direction->categories as $category)
