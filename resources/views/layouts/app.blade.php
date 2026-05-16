@@ -95,7 +95,7 @@
                             <a href="/#nominacii" class="px-1 2xl:px-4">Номинации</a>
                         </li>
                         <li>
-                            <a target="_blank" href="/documents/Крым_молодёжный_Положение.pdf" class="px-1 2xl:px-4">Положение</a>
+                            <a target="_blank" href="/documents/Polozhenie_Premia_Krym_molode_776_zhnyi_774_2026.pdf" class="px-1 2xl:px-4">Положение</a>
                         </li>
                     </ul>
                 </nav>
@@ -141,7 +141,7 @@
                         <a href="/#nominacii" class="text-2xl md:text-[44px]">Номинации</a>
                     </li>
                     <li>
-                        <a target="_blank" href="/documents/Крым_молодёжный_Положение.pdf" class="text-2xl md:text-[44px]">Положение</a>
+                        <a target="_blank" href="/documents/Polozhenie_Premia_Krym_molode_776_zhnyi_774_2026.pdf" class="text-2xl md:text-[44px]">Положение</a>
                     </li>
                 </ul>
             </div>

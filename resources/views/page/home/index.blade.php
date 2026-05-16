@@ -96,7 +96,7 @@
                             <a href="#nominacii" class="px-1 2xl:px-4">Номинации</a>
                         </li>
                         <li>
-                            <a target="_blank" href="/documents/Крым_молодёжный_Положение.pdf" class="px-1 2xl:px-4">Положение</a>
+                            <a target="_blank" href="/documents/Polozhenie_Premia_Krym_molode_776_zhnyi_774_2026.pdf" class="px-1 2xl:px-4">Положение</a>
                         </li>
                     </ul>
                 </nav>
@@ -142,7 +142,7 @@
                         <a href="#nominacii" class="text-2xl md:text-[44px]">Номинации</a>
                     </li>
                     <li>
-                        <a target="_blank" href="/documents/Крым_молодёжный_Положение.pdf" class="text-2xl md:text-[44px]">Положение</a>
+                        <a target="_blank" href="/documents/Polozhenie_Premia_Krym_molode_776_zhnyi_774_2026.pdf" class="text-2xl md:text-[44px]">Положение</a>
                     </li>
                 </ul>
             </div>
@@ -160,12 +160,10 @@
                             class="text-3xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-title max-w-[680px] py-2 mb-5 sm:mb-8 lg:mb-[100px] font-commissioner-700 uppercase tracking-tighter">крым молодёжный это&nbsp;–
                         </h1>
                         <p class="text-[21px]/[calc(24/21*100%)] max-w-[568px]">
-                            Республиканская премия общественного признания в&nbsp;2025&nbsp;году, направленная на выявление
+                            Республиканская премия общественного признания в&nbsp;2026&nbsp;году, направленная на выявление
                             и признание заслуг
                             крымской
-                            молодёжи, имеющей особые достижения в различных областях социальной, экономической, научной,
-                            инновационной, творческой,
-                            спортивной, общественной и добровольческой деятельности.
+                            молодёжи, имеющей особые достижения в различных областях социальной, экономической, научной, инновационной, творческой, спортивной, общественной и добровольческой деятельности.
                         </p>
                     </div>
                     <div class="absolute right-0 bottom-0 xs:pr-[30px]">
@@ -195,7 +193,7 @@
                 <div class="container">
                     <h2
                         class="_title text-primary mb-14 lg:mb-[110px] text-3xl xs:text-4xl lg:text-5xl 2xl:text-6xl/[1]">
-                        Этапы проведения Премии в 2025 году
+                        Этапы проведения Премии в 2026 году
                     </h2>
                 </div>
                 <div class="relative hidden lg:block">
@@ -207,9 +205,9 @@
                                     <div class="bg-primary bottom-[17px] right-[17px] pulse"></div>
                                 </div>
                                 <div class="max-w-[300px]">
-                                    <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">1 июня - 11 июня</p>
+                                    <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">21 мая - 31 мая</p>
                                     <p class="font-commissioner-700 text-xl/[calc(20.5/20*100%)]">
-                                        Рассмотрение заявок экспертным советом
+                                        Первичное рассмотрение заявок
                                     </p>
                                 </div>
                             </div>
@@ -219,7 +217,7 @@
                                     <div class="bg-primary bottom-[17px] right-[17px] pulse"></div>
                                 </div>
                                 <div class="max-w-[300px]">
-                                    <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">27 июня</p>
+                                    <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">июнь</p>
                                     <p class="font-commissioner-700 text-xl/[calc(20.5/20*100%)]">
                                         Торжественное награждение победителей
                                     </p>
@@ -231,7 +229,7 @@
                                     <div class="bg-accent-dark top-[17px] left-[17px] pulse"></div>
                                 </div>
                                 <div class="max-w-[300px] mt-auto absolute left-[50px] top-[100px]">
-                                    <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">20 мая - 1 июня</p>
+                                    <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">20 апреля - 20 мая</p>
                                     <p class="font-commissioner-700 text-xl/[calc(20.5/20*100%)]">
                                         Заявочная компания
                                     </p>
@@ -243,9 +241,9 @@
                                     <div class="bg-accent-dark top-[17px] left-[17px] pulse"></div>
                                 </div>
                                 <div class="max-w-[300px] mt-auto absolute left-[50px] top-[100px]">
-                                    <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">12 июня - 22 июня</p>
+                                    <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">1 июня - 15 июня</p>
                                     <p class="font-commissioner-700 text-xl/[calc(20.5/20*100%)]">
-                                        Проведение народного голосования
+                                        Проведение народного голосования и оценка экспертов
                                     </p>
                                 </div>
                             </div>
@@ -262,7 +260,7 @@
                                 <div class="bg-accent-dark pulse top-[17px] left-[17px]"></div>
                             </div>
                             <div class="max-w-[300px] relative bottom-4">
-                                <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">20 мая - 1 июня</p>
+                                <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">20 апреля - 20 мая</p>
                                 <p class="font-commissioner-700 text-base/[1] tex xs:text-xl/[calc(20.5/20*100%)]">
                                     Заявочная компания
                                 </p>
@@ -274,9 +272,9 @@
                                 <div class="bg-primary pulse bottom-[17px] left-[17px]"></div>
                             </div>
                             <div class="max-w-[300px] relative bottom-2 xs:static">
-                                <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">1 июня - 11 июня</p>
+                                <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">21 мая - 31 мая</p>
                                 <p class="font-commissioner-700 text-base/[1] xs:text-xl/[calc(20.5/20*100%)]">
-                                    Рассмотрение заявок экспертным советом
+                                    Первичное рассмотрение заявок
                                 </p>
                             </div>
                         </div>
@@ -286,9 +284,9 @@
                                 <div class="bg-accent-dark pulse top-[17px] left-[17px]"></div>
                             </div>
                             <div class="max-w-[300px] relative bottom-2 xs:static">
-                                <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">12 июня - 22 июня</p>
+                                <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">1 июня - 15 июня</p>
                                 <p class="font-commissioner-700 text-base/[1] xs:text-xl/[calc(20.5/20*100%)]">
-                                    Проведение народного голосования
+                                    Проведение народного голосования и оценка экспертов
                                 </p>
                             </div>
                         </div>
@@ -298,7 +296,7 @@
                                 <div class="bg-primary pulse bottom-[17px] left-[17px]"></div>
                             </div>
                             <div class="max-w-[300px] relative bottom-2 xs:static">
-                                <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">27 июня</p>
+                                <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">июнь</p>
                                 <p class="font-commissioner-700 text-base/[1] xs:text-xl/[calc(20.5/20*100%)]">
                                     Торжественное награждение победителей
                                 </p>
