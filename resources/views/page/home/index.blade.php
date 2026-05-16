@@ -274,7 +274,7 @@
                             <div class="max-w-[300px] relative bottom-2 xs:static">
                                 <p class="mb-2 font-commissioner-300 text-base/[calc(19/16*100%)]">21 мая - 31 мая</p>
                                 <p class="font-commissioner-700 text-base/[1] xs:text-xl/[calc(20.5/20*100%)]">
-                                    Первичное рассмотрение заявок
+                                    Первичное рассмотрение заявок1
                                 </p>
                             </div>
                         </div>
