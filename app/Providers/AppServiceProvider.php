@@ -8,8 +8,11 @@ use App\Models\Category;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Relations\Relation;
+use SocialiteProviders\Manager\SocialiteWasCalled;
+use SocialiteProviders\VKontakte\Provider;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -38,6 +41,10 @@ class AppServiceProvider extends ServiceProvider
 
         Blade::if('fullInformation', function () {
             return isCorrectProfile();
+        });
+
+        Event::listen(function (SocialiteWasCalled $event) {
+            $event->extendSocialite('vkontakte', Provider::class);
         });
 
     }

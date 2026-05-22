@@ -14,7 +14,7 @@
         "laravel/telescope": "^5.0",
         "laravel/tinker": "^2.8",
         "moonshine/moonshine": "^2.11",
-        "socialiteproviders/vkontakte": "^5.0"
+        "muscobytes/socialiteprovider-vkontakte": "^2.1"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.13",

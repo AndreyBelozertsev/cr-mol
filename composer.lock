@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1ab367bed4ae56e00e7c648b9301018a",
+    "content-hash": "185c3009e2869e201195023475b1dbb3",
     "packages": [
         {
             "name": "brick/math",
@@ -2495,6 +2495,56 @@
             "time": "2024-04-19T14:33:26+00:00"
         },
         {
+            "name": "muscobytes/socialiteprovider-vkontakte",
+            "version": "2.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/muscobytes/socialiteprovider-vkontakte.git",
+                "reference": "b976fa640d308740fb0196a9e6d6d6a60e0112b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/muscobytes/socialiteprovider-vkontakte/zipball/b976fa640d308740fb0196a9e6d6d6a60e0112b8",
+                "reference": "b976fa640d308740fb0196a9e6d6d6a60e0112b8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^8.0",
+                "socialiteproviders/manager": "^4.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SocialiteProviders\\VKontakte\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Faust",
+                    "email": "hello@brianfaust.de"
+                }
+            ],
+            "description": "VKontakte OAuth2 Provider for Laravel Socialite",
+            "keywords": [
+                "laravel",
+                "oauth",
+                "provider",
+                "socialite",
+                "vkontakte"
+            ],
+            "support": {
+                "docs": "https://socialiteproviders.com/vkontakte",
+                "issues": "https://github.com/socialiteproviders/providers/issues",
+                "source": "https://github.com/socialiteproviders/providers"
+            },
+            "time": "2025-03-29T20:34:52+00:00"
+        },
+        {
             "name": "nesbot/carbon",
             "version": "2.72.3",
             "source": {
@@ -4147,56 +4197,6 @@
                 "source": "https://github.com/socialiteproviders/manager"
             },
             "time": "2024-02-17T08:58:03+00:00"
-        },
-        {
-            "name": "socialiteproviders/vkontakte",
-            "version": "5.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/SocialiteProviders/VKontakte.git",
-                "reference": "3486290260da9e185ef25ec8150128486d939f8f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/SocialiteProviders/VKontakte/zipball/3486290260da9e185ef25ec8150128486d939f8f",
-                "reference": "3486290260da9e185ef25ec8150128486d939f8f",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "php": "^7.4 || ^8.0",
-                "socialiteproviders/manager": "~4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "SocialiteProviders\\VKontakte\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Brian Faust",
-                    "email": "hello@brianfaust.de"
-                }
-            ],
-            "description": "VKontakte OAuth2 Provider for Laravel Socialite",
-            "keywords": [
-                "laravel",
-                "oauth",
-                "provider",
-                "socialite",
-                "vkontakte"
-            ],
-            "support": {
-                "docs": "https://socialiteproviders.com/vkontakte",
-                "issues": "https://github.com/socialiteproviders/providers/issues",
-                "source": "https://github.com/socialiteproviders/providers"
-            },
-            "time": "2022-07-18T08:42:36+00:00"
         },
         {
             "name": "symfony/console",
@@ -9292,12 +9292,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.1"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
 }
