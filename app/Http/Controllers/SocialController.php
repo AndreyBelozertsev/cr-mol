@@ -30,7 +30,16 @@ class SocialController extends Controller
         try {
             $vkUser = Socialite::driver($driver)->stateless()->user();
         } catch (Throwable $e) {
-            Log::error('VK auth callback failed', ['error' => $e->getMessage()]);
+            Log::error('VK auth callback failed', [
+                'error'     => $e->getMessage(),
+                'exception' => get_class($e),
+                'request'   => [
+                    'has_code'      => request()->has('code'),
+                    'has_device_id' => request()->has('device_id'),
+                    'has_state'     => request()->has('state'),
+                    'params'        => request()->except(['code']),
+                ],
+            ]);
             return redirect()->route('home')->withErrors(['auth' => 'Ошибка авторизации через ВКонтакте. Попробуйте ещё раз.']);
         }
 
