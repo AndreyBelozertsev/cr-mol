@@ -14,7 +14,7 @@ class SocialController extends Controller
 {
     public function redirect(string $driver){
         try{
-            return Socialite::driver($driver)->stateless()->redirect();
+            return Socialite::driver($driver)->redirect();
         }catch(Throwable $e){
             throw new DomainException('произошла ошибка или драйвер не поддерживается ');
         }
