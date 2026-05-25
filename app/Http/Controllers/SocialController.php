@@ -14,7 +14,7 @@ class SocialController extends Controller
 {
     public function redirect(string $driver){
         try{
-            return Socialite::driver($driver)->redirect();
+            return Socialite::driver($driver)->stateless()->redirect();
         }catch(Throwable $e){
             throw new DomainException('произошла ошибка или драйвер не поддерживается ');
         }
@@ -27,7 +27,7 @@ class SocialController extends Controller
             throw new DomainException('произошла ошибка или драйвер не поддерживается ');
         }
     
-        $vkUser = Socialite::driver($driver)->user();
+        $vkUser = Socialite::driver($driver)->stateless()->user();
 
         if(!$user = User::where('vkontakte_id', $vkUser->getId())->first()){
             $user = User::create([
