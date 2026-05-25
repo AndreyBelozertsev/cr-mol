@@ -11,8 +11,8 @@ use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Relations\Relation;
+use App\Socialite\VkontakteProvider;
 use SocialiteProviders\Manager\SocialiteWasCalled;
-use SocialiteProviders\VKontakte\Provider;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -44,7 +44,7 @@ class AppServiceProvider extends ServiceProvider
         });
 
         Event::listen(function (SocialiteWasCalled $event) {
-            $event->extendSocialite('vkontakte', Provider::class);
+            $event->extendSocialite('vkontakte', VkontakteProvider::class);
         });
 
     }

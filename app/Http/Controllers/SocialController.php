@@ -26,8 +26,13 @@ class SocialController extends Controller
         if($driver != 'vkontakte'){
             throw new DomainException('произошла ошибка или драйвер не поддерживается ');
         }
-    
-        $vkUser = Socialite::driver($driver)->stateless()->user();
+
+        try {
+            $vkUser = Socialite::driver($driver)->stateless()->user();
+        } catch (Throwable $e) {
+            Log::error('VK auth callback failed', ['error' => $e->getMessage()]);
+            return redirect()->route('home')->withErrors(['auth' => 'Ошибка авторизации через ВКонтакте. Попробуйте ещё раз.']);
+        }
 
         if(!$user = User::where('vkontakte_id', $vkUser->getId())->first()){
             $user = User::create([
