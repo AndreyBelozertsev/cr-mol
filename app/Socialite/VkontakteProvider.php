@@ -2,6 +2,7 @@
 
 namespace App\Socialite;
 
+use GuzzleHttp\Exception\ClientException;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 use SocialiteProviders\VKontakte\Provider as BaseProvider;
@@ -53,13 +54,21 @@ class VkontakteProvider extends BaseProvider
 
     protected function getTokenFields($code): array
     {
+        $verifier = $this->request->session()->pull(self::VERIFIER_KEY);
+
+        Log::info('VK token exchange fields', [
+            'has_code_verifier' => $verifier !== null ? 'yes' : 'NO - session lost',
+            'has_device_id'     => $this->request->has('device_id') ? 'yes' : 'no',
+            'device_id'         => $this->request->get('device_id'),
+        ]);
+
         return [
             'grant_type'    => 'authorization_code',
             'client_id'     => $this->clientId,
             'client_secret' => $this->clientSecret,
             'code'          => $code,
             'redirect_uri'  => $this->redirectUrl,
-            'code_verifier' => $this->request->session()->pull(self::VERIFIER_KEY),
+            'code_verifier' => $verifier,
             'device_id'     => $this->request->get('device_id'),
             'state'         => Str::random(64),
         ];
@@ -67,7 +76,16 @@ class VkontakteProvider extends BaseProvider
 
     public function getAccessTokenResponse($code): array
     {
-        $response = parent::getAccessTokenResponse($code);
+        try {
+            $response = parent::getAccessTokenResponse($code);
+        } catch (ClientException $e) {
+            $body = (string) $e->getResponse()->getBody();
+            Log::error('VK OAuth2 token exchange HTTP error', [
+                'status'      => $e->getResponse()->getStatusCode(),
+                'vk_response' => $body,
+            ]);
+            return json_decode($body, true) ?? [];
+        }
 
         if (!isset($response['access_token'])) {
             Log::error('VK OAuth2 token exchange failed', ['vk_response' => $response]);
